@@ -1,0 +1,453 @@
+[
+    {
+      "question": "Which country won the FIFA World Cup in 2018?",
+      "answers": [
+        "Germany",
+        "Brazil",
+        "France",
+        "Argentina"
+      ],
+      "correctAnswer": "France"
+    },
+    {
+      "question": "Which basketball player is known as 'The Black Mamba'?",
+      "answers": [
+        "Michael Jordan",
+        "LeBron James",
+        "Kobe Bryant",
+        "Shaquille O'Neal"
+      ],
+      "correctAnswer": "Kobe Bryant"
+    },
+    {
+      "question": "In which year did Roger Federer win his first Wimbledon title?",
+      "answers": [
+        "2000",
+        "2001",
+        "2003",
+        "2005"
+      ],
+      "correctAnswer": "2003"
+    },
+    {
+      "question": "Which country hosted the 2016 Summer Olympics?",
+      "answers": [
+        "Brazil",
+        "China",
+        "United Kingdom",
+        "Japan"
+      ],
+      "correctAnswer": "Brazil"
+    },
+    {
+      "question": "Which NFL team has won the most Super Bowl championships?",
+      "answers": [
+        "New England Patriots",
+        "Pittsburgh Steelers",
+        "Dallas Cowboys",
+        "San Francisco 49ers"
+      ],
+      "correctAnswer": "New England Patriots"
+    },
+    {
+      "question": "Which tennis player has won the most Grand Slam singles titles in the Open Era?",
+      "answers": [
+        "Serena Williams",
+        "Steffi Graf",
+        "Margaret Court",
+        "Martina Navratilova"
+      ],
+      "correctAnswer": "Serena Williams"
+    },
+    {
+      "question": "Who holds the record for the fastest 100m sprint?",
+      "answers": [
+        "Usain Bolt",
+        "Tyson Gay",
+        "Yohan Blake",
+        "Justin Gatlin"
+      ],
+      "correctAnswer": "Usain Bolt"
+    },
+    {
+      "question": "Which country won the UEFA Euro 2020 tournament?",
+      "answers": [
+        "Italy",
+        "Spain",
+        "France",
+        "England"
+      ],
+      "correctAnswer": "Italy"
+    },
+    {
+      "question": "Which baseball team has won the most World Series titles?",
+      "answers": [
+        "New York Yankees",
+        "Boston Red Sox",
+        "Los Angeles Dodgers",
+        "Chicago Cubs"
+      ],
+      "correctAnswer": "New York Yankees"
+    },
+    {
+      "question": "Which NBA team did Michael Jordan play for during most of his career?",
+      "answers": [
+        "Chicago Bulls",
+        "Los Angeles Lakers",
+        "Miami Heat",
+        "Houston Rockets"
+      ],
+      "correctAnswer": "Chicago Bulls"
+    },
+    {
+      "question": "In which year did Tiger Woods win his first Masters Tournament?",
+      "answers": [
+        "1997",
+        "2000",
+        "2001",
+        "1996"
+      ],
+      "correctAnswer": "1997"
+    },
+    {
+      "question": "Which golfer holds the record for the most major championship wins?",
+      "answers": [
+        "Jack Nicklaus",
+        "Tiger Woods",
+        "Arnold Palmer",
+        "Gary Player"
+      ],
+      "correctAnswer": "Jack Nicklaus"
+    },
+    {
+      "question": "Who won the NBA Finals MVP in 2020?",
+      "answers": [
+        "LeBron James",
+        "Anthony Davis",
+        "Kawhi Leonard",
+        "Stephen Curry"
+      ],
+      "correctAnswer": "LeBron James"
+    },
+    {
+      "question": "Who won the 2021 Formula 1 World Championship?",
+      "answers": [
+        "Lewis Hamilton",
+        "Max Verstappen",
+        "Sebastian Vettel",
+        "Valtteri Bottas"
+      ],
+      "correctAnswer": "Max Verstappen"
+    },
+    {
+      "question": "Which country has won the most Rugby World Cup titles?",
+      "answers": [
+        "New Zealand",
+        "Australia",
+        "South Africa",
+        "England"
+      ],
+      "correctAnswer": "New Zealand"
+    },
+    {
+      "question": "Who won the NBA Rookie of the Year award in 2019?",
+      "answers": [
+        "Luka Doncic",
+        "Trae Young",
+        "Zion Williamson",
+        "Ja Morant"
+      ],
+      "correctAnswer": "Luka Doncic"
+    },
+    {
+      "question": "Which boxer is known as 'The Greatest' and 'The People's Champion'?",
+      "answers": [
+        "Muhammad Ali",
+        "Mike Tyson",
+        "Joe Frazier",
+        "Floyd Mayweather"
+      ],
+      "correctAnswer": "Muhammad Ali"
+    },
+    {
+      "question": "Which NFL team won the Super Bowl in 2020?",
+      "answers": [
+        "Kansas City Chiefs",
+        "San Francisco 49ers",
+        "New England Patriots",
+        "Green Bay Packers"
+      ],
+      "correctAnswer": "Kansas City Chiefs"
+    },
+    {
+      "question": "Which country won the FIFA Women's World Cup in 2019?",
+      "answers": [
+        "USA",
+        "Germany",
+        "Netherlands",
+        "Sweden"
+      ],
+      "correctAnswer": "USA"
+    },
+    {
+      "question": "Who is the all-time leading scorer in the NBA?",
+      "answers": [
+        "LeBron James",
+        "Kareem Abdul-Jabbar",
+        "Michael Jordan",
+        "Kobe Bryant"
+      ],
+      "correctAnswer": "Kareem Abdul-Jabbar"
+    },
+    {
+      "question": "Which tennis player has won the most Wimbledon titles in the men's singles?",
+      "answers": [
+        "Roger Federer",
+        "Rafael Nadal",
+        "Novak Djokovic",
+        "Pete Sampras"
+      ],
+      "correctAnswer": "Roger Federer"
+    },
+    {
+      "question": "Who won the Premier League Golden Boot in 2021?",
+      "answers": [
+        "Mohamed Salah",
+        "Harry Kane",
+        "Cristiano Ronaldo",
+        "Jamie Vardy"
+      ],
+      "correctAnswer": "Harry Kane"
+    },
+    {
+      "question": "Which NHL player holds the record for the most career goals?",
+      "answers": [
+        "Wayne Gretzky",
+        "Alex Ovechkin",
+        "Mario Lemieux",
+        "Jaromir Jagr"
+      ],
+      "correctAnswer": "Wayne Gretzky"
+    },
+    {
+      "question": "Which country won the most medals in the 2020 Summer Olympics?",
+      "answers": [
+        "USA",
+        "China",
+        "Russia",
+        "Japan"
+      ],
+      "correctAnswer": "USA"
+    },
+    {
+      "question": "Which golfer won the Masters Tournament in 2021?",
+      "answers": [
+        "Dustin Johnson",
+        "Hideki Matsuyama",
+        "Rory McIlroy",
+        "Brooks Koepka"
+      ],
+      "correctAnswer": "Hideki Matsuyama"
+    },
+    {
+      "question": "Which soccer player has won the most Ballon d'Or awards?",
+      "answers": [
+        "Lionel Messi",
+        "Cristiano Ronaldo",
+        "Zinedine Zidane",
+        "Ronaldinho"
+      ],
+      "correctAnswer": "Lionel Messi"
+    },
+    {
+      "question": "Which country won the ICC Cricket World Cup in 2019?",
+      "answers": [
+        "England",
+        "India",
+        "Australia",
+        "New Zealand"
+      ],
+      "correctAnswer": "England"
+    },
+    {
+      "question": "Who holds the record for the fastest goal in Premier League history?",
+      "answers": [
+        "Shane Long",
+        "Sadio Mane",
+        "Harry Kane",
+        "Jamie Vardy"
+      ],
+      "correctAnswer": "Shane Long"
+    },
+    {
+      "question": "Which tennis player won the 2021 US Open women's singles title?",
+      "answers": [
+        "Emma Raducanu",
+        "Naomi Osaka",
+        "Serena Williams",
+        "Ashleigh Barty"
+      ],
+      "correctAnswer": "Emma Raducanu"
+    },
+    {
+      "question": "Which MLB player hit the most home runs in the 2021 season?",
+      "answers": [
+        "Shohei Ohtani",
+        "Vladimir Guerrero Jr.",
+        "Fernando Tatis Jr.",
+        "Aaron Judge"
+      ],
+      "correctAnswer": "Shohei Ohtani"
+    },
+    {
+      "question": "Which team won the Stanley Cup in 2021?",
+      "answers": [
+        "Tampa Bay Lightning",
+        "Montreal Canadiens",
+        "Vegas Golden Knights",
+        "Boston Bruins"
+      ],
+      "correctAnswer": "Tampa Bay Lightning"
+    },
+    {
+      "question": "Which tennis player has won the most Australian Open men's singles titles?",
+      "answers": [
+        "Novak Djokovic",
+        "Roger Federer",
+        "Rafael Nadal",
+        "Andre Agassi"
+      ],
+      "correctAnswer": "Novak Djokovic"
+    },
+    {
+      "question": "Which NFL team has the most Super Bowl appearances?",
+      "answers": [
+        "New England Patriots",
+        "Pittsburgh Steelers",
+        "Dallas Cowboys",
+        "San Francisco 49ers"
+      ],
+      "correctAnswer": "New England Patriots"
+    },
+    {
+      "question": "Which country has won the most Olympic gold medals in basketball?",
+      "answers": [
+        "USA",
+        "Spain",
+        "Argentina",
+        "Russia"
+      ],
+      "correctAnswer": "USA"
+    },
+    {
+      "question": "Who is the only athlete to play in both a Super Bowl and a World Series?",
+      "answers": [
+        "Deion Sanders",
+        "Bo Jackson",
+        "Michael Jordan",
+        "Tom Brady"
+      ],
+      "correctAnswer": "Deion Sanders"
+    },
+    {
+      "question": "Which soccer player scored the most goals in the 2020-2021 Champions League?",
+      "answers": [
+        "Erling Haaland",
+        "Kylian Mbappe",
+        "Lionel Messi",
+        "Cristiano Ronaldo"
+      ],
+      "correctAnswer": "Erling Haaland"
+    },
+    {
+      "question": "Who holds the record for the most strikeouts in a single MLB season?",
+      "answers": [
+        "Nolan Ryan",
+        "Randy Johnson",
+        "Max Scherzer",
+        "Jacob deGrom"
+      ],
+      "correctAnswer": "Nolan Ryan"
+    },
+    {
+      "question": "Which country won the 2021 Copa América?",
+      "answers": [
+        "Argentina",
+        "Brazil",
+        "Chile",
+        "Uruguay"
+      ],
+      "correctAnswer": "Argentina"
+    },
+    {
+      "question": "Which NBA player won the MVP award for the 2020-2021 season?",
+      "answers": [
+        "Nikola Jokic",
+        "Joel Embiid",
+        "Giannis Antetokounmpo",
+        "Stephen Curry"
+      ],
+      "correctAnswer": "Nikola Jokic"
+    },
+    {
+      "question": "Who holds the record for the most goals scored in a single World Cup?",
+      "answers": [
+        "Just Fontaine",
+        "Pele",
+        "Miroslav Klose",
+        "Gerd Muller"
+      ],
+      "correctAnswer": "Just Fontaine"
+    },
+    {
+      "question": "Which tennis player won the most singles titles in 2021?",
+      "answers": [
+        "Ashleigh Barty",
+        "Naomi Osaka",
+        "Aryna Sabalenka",
+        "Emma Raducanu"
+      ],
+      "correctAnswer": "Ashleigh Barty"
+    },
+    {
+      "question": "Which NFL player holds the record for the most career touchdowns?",
+      "answers": [
+        "Jerry Rice",
+        "Tom Brady",
+        "Peyton Manning",
+        "Randy Moss"
+      ],
+      "correctAnswer": "Jerry Rice"
+    },
+    {
+      "question": "Which team won the UEFA Champions League in 2021?",
+      "answers": [
+        "Chelsea",
+        "Manchester City",
+        "Bayern Munich",
+        "Paris Saint-Germain"
+      ],
+      "correctAnswer": "Chelsea"
+    },
+    {
+      "question": "Who holds the record for the fastest serve in tennis?",
+      "answers": [
+        "John Isner",
+        "Andy Roddick",
+        "Sam Groth",
+        "Roger Federer"
+      ],
+      "correctAnswer": "Sam Groth"
+    },
+    {
+      "question": "Which NFL quarterback has the most career passing yards?",
+      "answers": [
+        "Tom Brady",
+        "Drew Brees",
+        "Peyton Manning",
+        "Brett Favre"
+      ],
+      "correctAnswer": "Tom Brady"
+    }
+]
+  
