@@ -32,7 +32,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="hero">
+    <section class="hero reveal" id="hero">
         <h2>Welcome to My Portfolio</h2>
         <p>
             I'm a dedicated Computer Engineering student at Queen's University, committed to continuous learning and growth in the fields of software development, embedded systems, and machine learning.
@@ -41,7 +41,7 @@
 
     <div class="container">
         <!-- Education -->
-        <section id="education">
+        <section id="education" class="reveal">
             <h2>Education</h2>
             <div class="content">
                 <p><strong>Queen's University</strong></p>
@@ -55,7 +55,7 @@
         </section>
 
         <!-- Experience -->
-        <section id="experience">
+        <section id="experience" class="reveal">
             <h2>Experience</h2>
             <div class="content">
                 <p><strong>Q Camps Counsellor – Queen’s University (May – August 2024)</strong></p>
@@ -89,12 +89,12 @@
         </section>
 
         <!-- Leadership -->
-        <section id="leadership">
+        <section id="leadership" class="reveal">
             <h2>Leadership</h2>
             <div class="content">
                 <p><strong>Volleyball Coach – Bayridge Secondary School (Jan 2023 – Sept 2024)</strong></p>
                 <ul>
-                    <li>Coached grade 7 and 8s at “Junior Blazers Volleyball Camp,” focusing on skill development</li>
+                    <li>Coached grade 7 and 8s at "Junior Blazers Volleyball Camp," focusing on skill development</li>
                     <li>Led the Senior Boys team in competitive tournaments, emphasizing teamwork and advanced skills</li>
                 </ul>
 
@@ -107,7 +107,7 @@
         </section>
 
         <!-- Projects -->
-        <section id="projects">
+        <section id="projects" class="reveal">
             <h2>Projects</h2>
             <div class="content">
                 <p><strong>APSC 103 Rover Autonomous Operation</strong></p>
@@ -138,7 +138,7 @@
         </section>
 
         <!-- Awards -->
-        <section id="awards">
+        <section id="awards" class="reveal">
             <h2>Awards & Activities</h2>
             <div class="content">
                 <p><strong>Governor General's Academic Medal</strong></p>
@@ -159,7 +159,7 @@
         </section>
 
         <!-- Skills -->
-        <section id="skills">
+        <section id="skills" class="reveal">
             <h2>Technical Skills</h2>
             <div class="content">
                 <ul>
@@ -172,7 +172,7 @@
         </section>
 
         <!-- Contact -->
-        <section id="contact">
+        <section id="contact" class="reveal">
             <h2>Contact</h2>
             <div class="content">
                 <p><strong>Email:</strong> <a href="mailto:swaineowen@icloud.com">swaineowen@icloud.com</a></p>
@@ -181,9 +181,42 @@
         </section>
     </div>
 
+    <button id="backToTop">&#8679;</button>
+
     <footer>
         <p>&copy; 2025 Owen Swaine. Proudly built with HTML, CSS, and a passion for innovation.</p>
     </footer>
+
+    <script>
+        // Reveal on scroll using Intersection Observer
+        const revealElements = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('reveal-visible');
+              obs.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
+
+        revealElements.forEach(el => {
+          observer.observe(el);
+        });
+
+        // Back to top button
+        const backToTopBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 300) {
+            backToTopBtn.style.display = 'block';
+          } else {
+            backToTopBtn.style.display = 'none';
+          }
+        });
+        
+        backToTopBtn.addEventListener('click', () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>
 
