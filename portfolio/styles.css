@@ -1,0 +1,155 @@
+/*
+  Unique and creative color scheme
+  We'll use vibrant, contrasting gradients and color combos
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  /* Define a set of CSS variables for theming */
+  --color-bg: #1a1a2e;
+  --color-bg-light: #16213e;
+  --color-primary: #0f3460;
+  --color-accent: #e94560; /* Vibrant accent color */
+  --color-text: #fff;
+  --color-text-secondary: #eee;
+  --color-card-bg: #30475e;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-secondary);
+}
+
+header {
+  background: linear-gradient(to right, var(--color-accent), var(--color-primary));
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav ul li {
+  padding: 0.5rem 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffe;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.hero h2 {
+  color: var(--color-accent);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  background-color: var(--color-bg-light);
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+section h2 {
+  background-color: var(--color-card-bg);
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+section .content {
+  padding: 1.5rem;
+}
+
+section .content p,
+section .content li {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: disc inside;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: var(--color-accent);
+  color: #fff;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Link styling */
+a {
+  color: #4fc3f7; /* vibrant link color */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  .hero h2 {
+    font-size: 1.7rem;
+  }
+}
+
