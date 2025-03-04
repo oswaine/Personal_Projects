@@ -1,62 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Owen Swaine - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Font: Poppins for a clean, modern look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f0f5ff;
             color: #333;
         }
+
         header {
-            background-color: #007bff;
-            color: white;
-            padding: 20px;
+            background: linear-gradient(to right, #007bff, #0056b3);
+            color: #fff;
+            padding: 2rem;
             text-align: center;
         }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
         nav ul {
             list-style: none;
-            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
         }
+
         nav ul li {
-            display: inline;
-            margin: 0 15px;
+            padding: 0.5rem 1rem;
         }
+
         nav ul li a {
-            color: white;
+            color: #fff;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
+            transition: color 0.3s ease;
         }
-        section {
-            padding: 40px;
+
+        nav ul li a:hover {
+            color: #ffe;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+        .hero h2 {
+            color: #007bff;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
             max-width: 800px;
-            margin: auto;
-            background: white;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            background-color: #fff;
+            margin-bottom: 2rem;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            margin-top: 20px;
+            overflow: hidden;
         }
-        h2 {
-            color: #007bff;
+
+        section h2 {
+            background-color: #007bff;
+            color: #fff;
+            padding: 1rem;
+            font-size: 1.5rem;
         }
+
+        section .content {
+            padding: 1.5rem;
+        }
+
+        section .content p, 
+        section .content li {
+            margin: 0.5rem 0;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style: disc inside;
+        }
+
+        /* Footer */
         footer {
             text-align: center;
-            padding: 10px;
-            background: #007bff;
-            color: white;
-            margin-top: 20px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 1rem;
+            margin-top: 2rem;
         }
+
+        /* Link styling */
         a {
             color: #0056b3;
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .hero h2 {
+                font-size: 1.7rem;
+            }
         }
     </style>
 </head>
@@ -66,51 +154,170 @@
         <p>Computer Engineering Student | Queen’s University</p>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#leadership">Leadership</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#awards">Awards</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a Computer Engineering student at Queen’s University with a strong foundation in software development, embedded systems, and machine learning.</p>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <h2>Welcome to My Portfolio</h2>
+        <p>
+            I'm a dedicated Computer Engineering student at Queen's University, committed to continuous learning and growth in the fields of software development, embedded systems, and machine learning.
+        </p>
     </section>
-    
-    <section id="experience">
-        <h2>Experience</h2>
-        <ul>
-            <li><strong>Q Camps Counsellor</strong> - Queen’s University (May - Aug 2024)</li>
-            <li><strong>Emergency Supply Teacher & Educational Assistant</strong> - Limestone DSB (Apr 2024 - Present)</li>
-            <li><strong>Rover Team – Object Detection</strong> - QSET (Jan 2024 - Present)</li>
-        </ul>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>APSC 103 Rover Autonomous Operation</strong> - Developed navigation software for a Mars rover</li>
-            <li><strong>ELEC 290 Car Security System</strong> - Built an Arduino-based vehicle security system</li>
-            <li><strong>Arduino-Based Game Controller</strong> - Designed a custom game controller for a Python Snake game</li>
-        </ul>
-    </section>
-    
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <p>Python, C, C++, Java, HTML, CSS, ROS, Linux</p>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: swaineowen@icloud.com</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/owenswaine">linkedin.com/in/owenswaine</a></p>
-    </section>
-    
+
+    <div class="container">
+        <!-- Education -->
+        <section id="education">
+            <h2>Education</h2>
+            <div class="content">
+                <p><strong>Queen's University</strong></p>
+                <ul>
+                    <li>Bachelor of Applied Science – Computer Engineering</li>
+                    <li>Class of 2027 | GPA: 4.1</li>
+                    <li>Dean’s List recognition</li>
+                    <li>Principal’s Scholarship (Top 5% of competitive admissions)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="content">
+                <p><strong>Q Camps Counsellor – Queen’s University (May – August 2024)</strong></p>
+                <ul>
+                    <li>Designed and led lessons to develop physical literacy & well-being</li>
+                    <li>Managed groups of up to 30 children, ensuring safety & engagement</li>
+                    <li>Promoted teamwork, communication, and problem-solving skills</li>
+                </ul>
+
+                <p><strong>Emergency Supply Teacher & Educational Assistant – Limestone District School Board (Apr 2024 – Current)</strong></p>
+                <ul>
+                    <li>Delivered lessons in Mathematics, Computer Science, Special Education</li>
+                    <li>Taught topics like Algebra, Calculus, Vectors, Java-based game development</li>
+                    <li>Fostered critical thinking and problem-solving in a positive classroom setting</li>
+                </ul>
+
+                <p><strong>Rover Team – Object Detection – Queen’s Space Engineering Team (QSET) (Jan 2024 – Current)</strong></p>
+                <ul>
+                    <li>Collaborating on an object detection system for an annual University Rover Challenge</li>
+                    <li>Utilizing YOLO, OpenCV, ROS2, and C++ for image processing & development</li>
+                    <li>Creating & annotating a custom dataset</li>
+                </ul>
+
+                <p><strong>Driving Range Assistant – The Landings Golf Course (2020 – Aug 2023)</strong></p>
+                <ul>
+                    <li>Enforced safety protocols & mentored young golfers</li>
+                    <li>Handled transactions and oversaw daily operations</li>
+                    <li>Ensured proper etiquette and a welcoming environment</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Leadership -->
+        <section id="leadership">
+            <h2>Leadership</h2>
+            <div class="content">
+                <p><strong>Volleyball Coach – Bayridge Secondary School (Jan 2023 – Sept 2024)</strong></p>
+                <ul>
+                    <li>Coached grade 7 and 8s at "Junior Blazers Volleyball Camp," focusing on skill development</li>
+                    <li>Led the Senior Boys team in competitive tournaments, emphasizing teamwork and advanced skills</li>
+                </ul>
+
+                <p><strong>Ultimate Frisbee Head Coach – Bayridge Public School (May 2023 – June 2023)</strong></p>
+                <ul>
+                    <li>Enhanced teamwork & promoted active living among students in grades 6–8</li>
+                    <li>Developed fundamental frisbee skills in a fun, collaborative environment</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="content">
+                <p><strong>APSC 103 Rover Autonomous Operation</strong></p>
+                <ul>
+                    <li>Designed & implemented navigation software leveraging Python & C++</li>
+                    <li>Used the A* algorithm for obstacle avoidance on rough terrain</li>
+                </ul>
+
+                <p><strong>ELEC 290 Car Security System</strong></p>
+                <ul>
+                    <li>Developed an Arduino-based vehicle security system with real-time alerts</li>
+                    <li>Used Wi-Fi communication and sensor data analysis</li>
+                    <li>Created a web interface using PHP & MySQL for logging</li>
+                </ul>
+
+                <p><strong>APSC 101 Automated Fluid Dispenser</strong></p>
+                <ul>
+                    <li>Collaborated to design & prototype a precise fluid dispensing system</li>
+                    <li>Utilized C++, Arduino, SolidWorks, and hardware integration</li>
+                </ul>
+
+                <p><strong>Arduino-Based Game Controller & Python Snake Game</strong></p>
+                <ul>
+                    <li>Designed a custom game controller using circuit design & C++</li>
+                    <li>Integrated with a Python-based Snake game for a fun user experience</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Awards -->
+        <section id="awards">
+            <h2>Awards & Activities</h2>
+            <div class="content">
+                <p><strong>Governor General's Academic Medal</strong></p>
+                <ul>
+                    <li>Recognized for top graduating average (98%) at Bayridge Secondary School (Class of 2023)</li>
+                </ul>
+                <p><strong>Kingston and District Sports Hall of Fame Scholarship 2023</strong></p>
+                <ul>
+                    <li>Awarded for academic & athletic excellence</li>
+                </ul>
+                <p><strong>High School Athletics</strong></p>
+                <ul>
+                    <li>Volleyball Captain/MVP, Badminton (KASSAA/EOSSAA medals), Ultimate Frisbee Captain/MVP</li>
+                    <li>Tennis competitor (KASSAA/EOSSAA/OFSAA with multiple medals)</li>
+                    <li>Athletic Council President, Top Athletics & Academics Award, Top Graduating Athlete Award</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="content">
+                <ul>
+                    <li>Programming: Python, C, C++, Java, VHDL</li>
+                    <li>Web: HTML, CSS</li>
+                    <li>Tools & Technologies: ROS, Linux, OpenCV, YOLO</li>
+                    <li>Software: Microsoft Suite, Google Suite</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="content">
+                <p><strong>Email:</strong> <a href="mailto:swaineowen@icloud.com">swaineowen@icloud.com</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/owenswaine">linkedin.com/in/owenswaine</a></p>
+            </div>
+        </section>
+    </div>
+
     <footer>
-        <p>&copy; 2025 Owen Swaine</p>
+        <p>&copy; 2025 Owen Swaine. Proudly built with HTML, CSS, and a passion for innovation.</p>
     </footer>
 </body>
 </html>
