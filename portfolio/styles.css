@@ -38,7 +38,7 @@ header {
   background: linear-gradient(
     90deg,
     var(--color-queens-blue) 0%,
-    var(--color-queens-red) 100%
+    var(--color-queens-gold) 100%
   );
   color: var(--color-text-inverse);
   padding: 2rem;
