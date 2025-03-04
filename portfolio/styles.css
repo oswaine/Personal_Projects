@@ -1,6 +1,8 @@
 /*
-  Unique and creative color scheme
-  We'll use vibrant, contrasting gradients and color combos
+  Queen’s University Color Scheme
+  Main Blue: #00205B
+  Red Accent: #CF142B
+  Gold Highlight: #FFEE00
 */
 
 * {
@@ -10,25 +12,35 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/* CSS Variables for theming */
 :root {
-  /* Define a set of CSS variables for theming */
-  --color-bg: #1a1a2e;
-  --color-bg-light: #16213e;
-  --color-primary: #0f3460;
-  --color-accent: #e94560; /* Vibrant accent color */
-  --color-text: #fff;
-  --color-text-secondary: #eee;
-  --color-card-bg: #30475e;
+  --color-queens-blue: #00205B; 
+  --color-queens-red: #CF142B;
+  --color-queens-gold: #FFEE00;
+
+  --color-bg: #f8f9fa; /* Light background */
+  --color-text: #333; 
+  --color-text-inverse: #fff;
+
+  /* For wave & highlight usage, you can choose the gold or red here */
+  --color-wave: var(--color-queens-red);
 }
 
+/* BODY STYLING */
 body {
   background-color: var(--color-bg);
-  color: var(--color-text-secondary);
+  color: var(--color-text);
 }
 
+/* HEADER */
 header {
-  background: linear-gradient(to right, var(--color-accent), var(--color-primary));
-  color: #fff;
+  /* Gradient from Blue to Red */
+  background: linear-gradient(
+    90deg,
+    var(--color-queens-blue) 0%,
+    var(--color-queens-red) 100%
+  );
+  color: var(--color-text-inverse);
   padding: 2rem;
   text-align: center;
 }
@@ -59,24 +71,26 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: var(--color-text-inverse);
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #ffe;
+  color: var(--color-queens-gold);
 }
 
-/* Hero Section */
+/* HERO SECTION */
 .hero {
   text-align: center;
   padding: 3rem 1rem;
+  /* Subtle background or border to tie the design together */
+  border-top: 4px solid var(--color-queens-gold);
 }
 
 .hero h2 {
-  color: var(--color-accent);
+  color: var(--color-queens-blue);
   font-size: 2rem;
   margin-bottom: 1rem;
 }
@@ -86,26 +100,33 @@ nav ul li a:hover {
   margin: 0 auto;
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #ddd;
+  color: #555;
 }
 
+/* WAVE DIVIDER */
+.wave svg path {
+  fill: var(--color-wave);
+}
+
+/* CONTAINER & SECTIONS */
 .container {
   max-width: 1000px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
+/* Section style with card-like panels */
 section {
-  background-color: var(--color-bg-light);
+  background-color: #ffffff;
   margin-bottom: 2rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
 }
 
 section h2 {
-  background-color: var(--color-card-bg);
-  color: #fff;
+  background-color: var(--color-queens-blue);
+  color: var(--color-text-inverse);
   padding: 1rem;
   font-size: 1.5rem;
 }
@@ -120,22 +141,45 @@ section .content li {
   line-height: 1.6;
 }
 
+/* Lists */
 ul {
   list-style: disc inside;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
   text-align: center;
-  background-color: var(--color-accent);
-  color: #fff;
+  background-color: var(--color-queens-red);
+  color: var(--color-text-inverse);
   padding: 1rem;
   margin-top: 2rem;
+  font-weight: 500;
 }
 
-/* Link styling */
+/* BACK-TO-TOP BUTTON */
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  background-color: var(--color-queens-blue);
+  color: var(--color-text-inverse);
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: var(--color-queens-gold);
+}
+
+/* LINK STYLING */
 a {
-  color: #4fc3f7; /* vibrant link color */
+  color: var(--color-queens-red);
   text-decoration: none;
 }
 
@@ -143,13 +187,31 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Responsive Design */
+/* REVEAL ANIMATION */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
   header h1 {
     font-size: 2rem;
   }
   .hero h2 {
     font-size: 1.7rem;
+  }
+  nav ul {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  section h2 {
+    font-size: 1.2rem;
   }
 }
 
