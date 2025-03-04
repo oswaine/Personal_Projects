@@ -18,7 +18,7 @@ I'm a Computer Engineering student at Queen's University, and a technology enthu
 
 ## 💻 Projects
 
-Stay tuned! I am currently working on new projects that will be shared here soon.
+Portfolio: https://oswaine.github.io/Personal_Projects/portfolio
 
 ---
 
