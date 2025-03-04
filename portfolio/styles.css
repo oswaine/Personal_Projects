@@ -18,11 +18,12 @@
   --color-queens-red: #CF142B;
   --color-queens-gold: #FFEE00;
 
-  --color-bg: #f8f9fa; /* Light background */
-  --color-text: #333; 
-  --color-text-inverse: #fff;
+  --color-bg: #0A0A0A; /* Darker background */
+  --color-text: #EAEAEA; /* Lighter text */
+  --color-text-inverse: #ffffff;
+  --color-subtext: #B0B0B0; /* Softer contrast for secondary text */
 
-  /* For wave & highlight usage, you can choose the gold or red here */
+  /* Accent color (wave & highlights) */
   --color-wave: var(--color-queens-red);
 }
 
@@ -30,15 +31,15 @@
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
+  line-height: 1.6;
 }
 
 /* HEADER */
 header {
-  /* Gradient from Blue to Red */
   background: linear-gradient(
     90deg,
     var(--color-queens-blue) 0%,
-    var(--color-queens-gold) 100%
+    var(--color-queens-red) 100%
   );
   color: var(--color-text-inverse);
   padding: 2rem;
@@ -55,6 +56,7 @@ header p {
   font-weight: 300;
 }
 
+/* NAVIGATION */
 nav {
   margin-top: 1rem;
 }
@@ -85,12 +87,11 @@ nav ul li a:hover {
 .hero {
   text-align: center;
   padding: 3rem 1rem;
-  /* Subtle background or border to tie the design together */
   border-top: 4px solid var(--color-queens-gold);
 }
 
 .hero h2 {
-  color: var(--color-queens-blue);
+  color: var(--color-queens-gold);
   font-size: 2rem;
   margin-bottom: 1rem;
 }
@@ -100,7 +101,7 @@ nav ul li a:hover {
   margin: 0 auto;
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #555;
+  color: var(--color-subtext);
 }
 
 /* WAVE DIVIDER */
@@ -115,11 +116,11 @@ nav ul li a:hover {
   padding: 0 1rem;
 }
 
-/* Section style with card-like panels */
+/* Section style with dark panels */
 section {
-  background-color: #ffffff;
+  background-color: #1A1A1A; /* Dark card background */
   margin-bottom: 2rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   overflow: hidden;
 }
@@ -139,6 +140,7 @@ section .content p,
 section .content li {
   margin: 0.5rem 0;
   line-height: 1.6;
+  color: var(--color-text);
 }
 
 /* Lists */
@@ -179,12 +181,14 @@ footer {
 
 /* LINK STYLING */
 a {
-  color: var(--color-queens-red);
+  color: var(--color-queens-gold);
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
   text-decoration: underline;
+  color: var(--color-queens-red);
 }
 
 /* REVEAL ANIMATION */
@@ -193,6 +197,7 @@ a:hover {
   transform: translateY(20px);
   transition: all 0.6s ease;
 }
+
 .reveal-visible {
   opacity: 1;
   transform: translateY(0);
@@ -214,4 +219,3 @@ a:hover {
     font-size: 1.2rem;
   }
 }
-
